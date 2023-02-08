@@ -1,0 +1,808 @@
+{
+	"info": {
+		"_postman_id": "ac455fff-4f2e-4d3d-b5b9-429a6f03cb03",
+		"name": "Intermedia APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10063578"
+	},
+	"item": [
+		{
+			"name": "Teleagents",
+			"item": [
+				{
+					"name": "Teleagents sessions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token",
+								"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pop0-apps.mycontactcenter.net/api/v3/telagents/sessions",
+							"protocol": "https",
+							"host": [
+								"pop0-apps",
+								"mycontactcenter",
+								"net"
+							],
+							"path": [
+								"api",
+								"v3",
+								"telagents",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Teleagents sessions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Username\": \"red\",\r\n  \"PhoneNumber\": \"6476476477\",\r\n  \"SecsDuration\": 36000,\r\n  \"TakeOverPhoneExtension\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pop0-apps.mycontactcenter.net/api/v3/telagents/sessions",
+							"protocol": "https",
+							"host": [
+								"pop0-apps",
+								"mycontactcenter",
+								"net"
+							],
+							"path": [
+								"api",
+								"v3",
+								"telagents",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Teleagents status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token",
+								"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ActivityCode\": 34,\r\n  \"Availability\": 0,\r\n  \"ActivityDescription\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pop0-apps.mycontactcenter.net/api/v3/telagents/sessions/66A62132-2FFF-4DAF-9AFA-58AAF596FB8E/activity",
+							"protocol": "https",
+							"host": [
+								"pop0-apps",
+								"mycontactcenter",
+								"net"
+							],
+							"path": [
+								"api",
+								"v3",
+								"telagents",
+								"sessions",
+								"66A62132-2FFF-4DAF-9AFA-58AAF596FB8E",
+								"activity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"AccountId\": \"frontiercom\",\r\n  \"Username\": \"apitoken\",\r\n  \"Password\": \"Frontier2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop1-apps.mycontactcenter.net/api/v1/tokens",
+					"protocol": "https",
+					"host": [
+						"pop1-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incoming Calls",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/hist/incomingvoicecalls/2022.-06-23",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hist",
+						"incomingvoicecalls",
+						"2022.-06-23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Real Time Global",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/API/v1/realtime/statistics/global",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"API",
+						"v1",
+						"realtime",
+						"statistics",
+						"global"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agent search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v1/realtime/status/agents",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"realtime",
+						"status",
+						"agents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Status",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ActivityCode\": 36,\r\n  \"ActivityDescription\": \"Cool Beans\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/API/v1/cca/sessions/26198784-87A3-45C7-90A4-93C3FA75E131/activity",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"API",
+						"v1",
+						"cca",
+						"sessions",
+						"26198784-87A3-45C7-90A4-93C3FA75E131",
+						"activity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dial Dynote",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"OrgPhoneNo\": \"\",\r\n  \"DstPhoneNo\": \"6472771007\",\r\n  \"CallingName\": \"My Number\",\r\n  \"CallingNumber\": \"6476476477\",\r\n  \"ExecutionAsync\": true,\r\n  \"ReturnRecUrl\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/API/v1/cca/sessions/A9BCEE2D-7B54-4441-ABD1-658921/dial",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"API",
+						"v1",
+						"cca",
+						"sessions",
+						"A9BCEE2D-7B54-4441-ABD1-658921",
+						"dial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chat",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "mnrUN1wRVxmh2sdwRmwHs906LMwK0ZyCFJbQRB2f3mA=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/hist/incomingchats/2021-03-09",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hist",
+						"incomingchats",
+						"2021-03-09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agent skills search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/agents/983733/skillset",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"agents",
+						"983733",
+						"skillset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sessions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/cca/sessions?username=abdo",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cca",
+						"sessions"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "abdo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ipify.org?format=json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ipify",
+						"org"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get live call",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/cca/sessions/B7BDFB4C-21A5-4CA3-A800-550F1EB70F37/interactions/voice",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cca",
+						"sessions",
+						"B7BDFB4C-21A5-4CA3-A800-550F1EB70F37",
+						"interactions",
+						"voice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pause recording",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/cca/sessions/B7BDFB4C-21A5-4CA3-A800-550F1EB70F37/interactions/voice/172d2b61-73a6-4d13-b926-6e392367f48c/pauseaudiorec",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cca",
+						"sessions",
+						"B7BDFB4C-21A5-4CA3-A800-550F1EB70F37",
+						"interactions",
+						"voice",
+						"172d2b61-73a6-4d13-b926-6e392367f48c",
+						"pauseaudiorec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resume recording",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/cca/sessions/B7BDFB4C-21A5-4CA3-A800-550F1EB70F37/interactions/voice/172d2b61-73a6-4d13-b926-6e392367f48c/resumeaudiorec",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cca",
+						"sessions",
+						"B7BDFB4C-21A5-4CA3-A800-550F1EB70F37",
+						"interactions",
+						"voice",
+						"172d2b61-73a6-4d13-b926-6e392367f48c",
+						"resumeaudiorec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Scheduled Dialouts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"DstNumber\": \"5147039540\",\r\n    \"DstName\": \"Luke Cage\",\r\n    \"OrgNumber\": \"8889997777\",\r\n    \"DialStartDate\": \"2022-07-05T20:00:30.481Z\",\r\n    \"DailyDialStartMinutesOffset\": 60,\r\n    \"DailyDialEndMinutesOffset\": 540,\r\n    \"DialSecondsTimeout\": 18,\r\n    \"ExpiryDate\": \"2030-07-05T20:00:30.481Z\",\r\n    \"Priority\": 1,\r\n    \"MinutesRetry\": 2,\r\n    \"MaxAttempts\": 1,\r\n    \"ScreenPopUrl\": \"string\",\r\n    \"ExtraInfo\": \"Call for an Appointment\",\r\n    \"DefaultCallerType\": \"string\",\r\n    \"DefaultMainSubject\": \"string\",\r\n    \"DefaultSubsubject\": \"string\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/APi/v2/dialer/entry/Welcome/623764",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"APi",
+						"v2",
+						"dialer",
+						"entry",
+						"Welcome",
+						"623764"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transcription ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CallType\": \"0\",\r\n    \"SentimentsFilter\": null,\r\n    \"KeywordsFilter\": \"intelligent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/APi/v2/hist/voicecalls/transcriptions/2022-09-08",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"APi",
+						"v2",
+						"hist",
+						"voicecalls",
+						"transcriptions",
+						"2022-09-08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transcription ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CallType\": \"0\",\r\n    \"SentimentsFilter\": null,\r\n    \"KeywordsFilter\": \"intelligent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/APi/v2/hist/voicecalls/transcriptions/download/2942726f-f9bb-421c-8547-b7e0f196d2e9",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"APi",
+						"v2",
+						"hist",
+						"voicecalls",
+						"transcriptions",
+						"download",
+						"2942726f-f9bb-421c-8547-b7e0f196d2e9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get agents IDs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/agents",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"agents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add skillset to agent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"QueueId\": 624467,\r\n    \"Priority\": 7\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/agents/1083402/skillset?applyToActiveSession=yes",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"agents",
+						"1083402",
+						"skillset"
+					],
+					"query": [
+						{
+							"key": "applyToActiveSession",
+							"value": "yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "q9LvlYA3KBcukFpQ6s0gFDagcPANPQc93pGySXtswmk=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"OrgPhoneNo\": \"\",\r\n  \"DstPhoneNo\": \"5147039540\",\r\n  \"CallingName\": \"Abdo Test\",\r\n  \"CallingNumber\": \"8888888888\",\r\n  \"ExecutionAsync\": true,\r\n  \"ReturnRecUrl\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pop0-apps.mycontactcenter.net/api/v2/cca/sessions/3D9C3B7C-3B72-415D-9331-21F00242E6DD/dial",
+					"protocol": "https",
+					"host": [
+						"pop0-apps",
+						"mycontactcenter",
+						"net"
+					],
+					"path": [
+						"api",
+						"v2",
+						"cca",
+						"sessions",
+						"3D9C3B7C-3B72-415D-9331-21F00242E6DD",
+						"dial"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
